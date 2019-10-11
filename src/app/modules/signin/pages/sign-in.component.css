@@ -1,0 +1,12 @@
+.image {
+margin-top: -100px;
+}
+.column {
+max-width: 450px;
+}
+.grid {
+    height: 100%;
+}
+.card-header.content{
+    background-color:#f7f7f7;
+}

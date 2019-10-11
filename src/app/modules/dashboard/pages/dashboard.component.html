@@ -1,0 +1,66 @@
+<div class="ui massive menu fixed inverted">
+<span class="item dashboard">
+    <p>Dashboard</p>
+</span>
+<div class="right menu">
+    <a (click)="logout()" class="item menu signout"><i class="sign-out icon"></i>Sign Out</a>
+</div>
+</div>
+
+<div class="ui main container">
+    <h1 class="ui header">Overview</h1>
+    <div class="ui stackable two column vertically divided grid container">
+        <div class="row">
+            <div class="column">
+            <div class="ui fluid card">
+                <div class="card-header content">
+                <div class="header fixed">Donut Chart</div>
+                </div>
+                <div class="content">
+                <div id="donutChart" class="description">
+                    
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="column">
+            <div class="ui fluid card">
+                <div class="card-header content">
+                    <div class="header fixed">Bar Chart</div>
+                </div>
+                <div class="content">
+                    <div id="barChart" class="description">
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="ui header">User List</h1>
+    <div class="ui stackable one column vertically divided grid container">
+        <div class="row">
+            <div class="column">
+                <table class="ui celled table">
+                <thead>
+                    <tr><th>#</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Username</th>
+                </tr></thead>
+                <tbody>
+                    <tr *ngFor="let user of data.tableUsers; index as i;">
+                    <td data-label="#">{{i}}</td>
+                    <td data-label="Firstname">{{user.firstName}}</td>
+                    <td data-label="Lastname">{{user.lastName}}</td>
+                    <td data-label="Username">{{user.username}}</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+      
+      

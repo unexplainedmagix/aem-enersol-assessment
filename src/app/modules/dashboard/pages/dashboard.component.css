@@ -1,0 +1,27 @@
+.menu{
+    color:#666666;
+}
+.dashboard{
+    font-size:16pt;
+}
+.signout{
+    font-size:12pt;
+}
+
+.ui.menu .item img.logo {
+    margin-right: 1.5em;
+}
+.main.container {
+    margin-top: 7em;
+}
+.ui.header{
+    margin-top: 1.5em;
+    margin-left: 0.5em;
+}
+.card-header.content{
+    background-color:#f7f7f7;
+}
+
+.description{
+    height:300px;
+}

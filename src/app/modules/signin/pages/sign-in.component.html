@@ -1,0 +1,35 @@
+<body>
+<div class="ui middle aligned center aligned grid">
+    <div class="column">
+        <div class="ui fluid card">
+            <div class="card-header content">
+                <div class="fixed">Sign in to your dashboard</div>
+            </div>
+            <div class="content">
+                <div class="description">
+                    <form class="ui large form">
+                        <div class="ui stacked">
+                            <div class="field">
+                            <div class="ui input">
+                                <input [(ngModel)]="user.username" type="text" name="username" placeholder="Username">
+                            </div>
+                            </div>
+                            <div class="field">
+                            <div class="ui input">
+                                <input [(ngModel)]="user.password" type="password" name="password" placeholder="Password">
+                            </div>
+                            </div>
+                            <div class="ui left">
+                                <div (click)="login()" class="ui left floated large blue button">Sign In</div>
+                            </div>
+                        </div>
+                    
+                        <div class="ui error message"></div>
+                
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
